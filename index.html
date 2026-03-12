@@ -45,7 +45,7 @@
 
     .hero {
       max-width: 720px;
-      margin: 64px auto 0;
+      margin: 36px auto 0;
       padding: 0 24px;
       text-align: center;
     }
@@ -61,14 +61,14 @@
       text-transform: uppercase;
       padding: 3px 10px;
       border-radius: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     h1 {
       font-size: clamp(26px, 5vw, 40px);
       font-weight: 700;
       line-height: 1.25;
-      margin-bottom: 18px;
+      margin-bottom: 10px;
     }
 
     h1 span { color: var(--link); }
@@ -77,15 +77,15 @@
       color: var(--muted);
       font-size: 17px;
       max-width: 560px;
-      margin: 0 auto 40px;
+      margin: 0 auto 24px;
     }
 
     .stats {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 28px;
       flex-wrap: wrap;
-      margin-bottom: 56px;
+      margin-bottom: 32px;
     }
 
     .stat { text-align: center; }
@@ -100,7 +100,7 @@
     .section {
       max-width: 720px;
       margin: 0 auto;
-      padding: 0 24px 56px;
+      padding: 0 24px 32px;
     }
 
     .section h2 {
@@ -145,133 +145,67 @@
     .tag-removed { background: rgba(218,54,51,.2); color: var(--danger); }
     .tag-ok      { background: rgba(46,160,67,.2);  color: #3fb950; }
 
-    /* ── form ── */
-    .form-wrap {
+    /* ── cta ── */
+    .cta-section {
       max-width: 520px;
       margin: 0 auto;
-      padding: 0 24px 80px;
+      padding: 0 24px 48px;
+      text-align: center;
     }
-
-    .form-wrap h2 {
+    .cta-section h2 {
       font-size: 22px;
       font-weight: 600;
       margin-bottom: 8px;
     }
-
-    .form-wrap p {
+    .cta-section p {
       color: var(--muted);
       font-size: 14px;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
-
-    form { display: flex; flex-direction: column; gap: 16px; }
-
-    label {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text);
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 15px;
-      padding: 10px 12px;
-      outline: none;
-      transition: border-color .15s;
-    }
-
-    input:focus, select:focus, textarea:focus {
-      border-color: var(--link);
-    }
-
-    select option { background: var(--surface); }
-    textarea { resize: vertical; min-height: 80px; }
-
-    .field { display: flex; flex-direction: column; }
-
-    .hint { font-size: 12px; color: var(--muted); margin-top: 4px; }
-
-    .checkbox-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-    .checkbox-row input[type="checkbox"] {
-      width: 16px;
-      height: 16px;
-      flex-shrink: 0;
-      margin-top: 2px;
-      cursor: pointer;
-    }
-
-    button[type="submit"] {
+    .cta-btn {
+      display: inline-block;
       background: var(--accent);
       border: 1px solid rgba(240,246,252,.1);
       border-radius: 6px;
       color: #fff;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 600;
-      padding: 11px 20px;
+      padding: 12px 28px;
+      text-decoration: none;
       transition: background .15s;
-      width: 100%;
     }
-    button[type="submit"]:hover { background: var(--accent-h); }
-    button[type="submit"]:disabled { opacity: .55; cursor: default; }
-
-    /* success banner */
-    #success {
-      display: none;
-      background: rgba(46,160,67,.12);
-      border: 1px solid #2ea043;
-      border-radius: 8px;
-      padding: 18px 20px;
-      text-align: center;
-      font-size: 15px;
-      color: #3fb950;
-      margin-top: 16px;
-    }
+    .cta-btn:hover { background: var(--accent-h); text-decoration: none; }
 
     /* ── testimonials ── */
     .quotes-section {
       max-width: 720px;
       margin: 0 auto;
-      padding: 0 24px 56px;
+      padding: 0 24px 32px;
     }
     .quotes-section h2 {
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
       padding-bottom: 10px;
       border-bottom: 1px solid var(--border);
     }
     .quotes-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 14px;
+      gap: 10px;
     }
     .quote-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-left: 3px solid var(--link);
       border-radius: 6px;
-      padding: 14px 16px;
+      padding: 10px 12px;
     }
     .quote-text {
       font-size: 14px;
       color: var(--text);
       line-height: 1.55;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
     .quote-author {
       font-size: 12px;
@@ -284,19 +218,19 @@
     .comments-section {
       max-width: 720px;
       margin: 0 auto;
-      padding: 0 24px 64px;
+      padding: 0 24px 40px;
     }
     .comments-section h2 {
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       padding-bottom: 10px;
       border-bottom: 1px solid var(--border);
     }
     .comments-section p {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
 
     /* ── footer ── */
@@ -341,8 +275,8 @@
       <div class="stat-l">students affected</div>
     </div>
     <div class="stat">
-      <div class="stat-n">83+</div>
-      <div class="stat-l">replies in 13 min</div>
+      <div class="stat-n">234</div>
+      <div class="stat-l">comments so far</div>
     </div>
     <div class="stat">
       <div class="stat-n">0</div>
@@ -420,89 +354,15 @@
   </div>
 </div>
 
-<div class="form-wrap">
+<div class="cta-section">
   <h2>File your complaint</h2>
   <p>
-    We are compiling complaints from affected students and educators to submit
-    directly to the GitHub Education team and, where appropriate, Anthropic.
-    Your email is never shared publicly.
+    Takes 60 seconds. Name, GitHub username, university, and what you were using
+    Claude Sonnet for. We submit these directly to the GitHub Education team.
   </p>
-
-  <!--
-    SETUP: Replace "YOUR_FORMSPREE_ID" below with your Formspree endpoint.
-    Sign up free at https://formspree.io → New Form → copy the 8-char ID.
-    The action URL becomes: https://formspree.io/f/mzdjgeww
-  -->
-  <form id="signup" action="https://formspree.io/f/mzdjgeww" method="POST">
-
-    <input type="hidden" name="_subject" value="Copilot Student Complaint: Claude Sonnet removed" />
-    <input type="hidden" name="_next" value="about:blank" />
-
-    <div class="field">
-      <label for="name">Full name <span style="color:var(--danger)">*</span></label>
-      <input type="text" id="name" name="name" autocomplete="name"
-             placeholder="Jane Smith" required />
-    </div>
-
-    <div class="field">
-      <label for="email">Email address <span style="color:var(--danger)">*</span></label>
-      <input type="email" id="email" name="email" autocomplete="email"
-             placeholder="jane@university.edu" required />
-      <span class="hint">Use your .edu or institutional address if possible.</span>
-    </div>
-
-    <div class="field">
-      <label for="github">GitHub username <span style="color:var(--danger)">*</span></label>
-      <input type="text" id="github" name="github_username"
-             placeholder="octocat" required
-             pattern="[A-Za-z0-9\-]+" title="GitHub usernames contain letters, numbers, and hyphens only" />
-    </div>
-
-    <div class="field">
-      <label for="university">University / institution <span style="color:var(--danger)">*</span></label>
-      <input type="text" id="university" name="university"
-             placeholder="Massachusetts Institute of Technology" required />
-    </div>
-
-    <div class="field">
-      <label for="role">I am a</label>
-      <select id="role" name="role">
-        <option value="student">Student</option>
-        <option value="educator">Educator / professor</option>
-        <option value="campus_expert">GitHub Campus Expert</option>
-        <option value="ta">Teaching assistant</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label for="model_used">Which model did you rely on most? <span style="color:var(--danger)">*</span></label>
-      <select id="model_used" name="model_used" required>
-        <option value="" disabled selected>Select a model</option>
-        <option value="claude_sonnet">Claude Sonnet</option>
-        <option value="claude_opus">Claude Opus</option>
-        <option value="gpt5">GPT-5.4</option>
-        <option value="multiple">Multiple of the above</option>
-      </select>
-    </div>
-
-    <div class="field">
-      <label for="message">Your complaint <span style="color:var(--danger)">*</span></label>
-      <textarea id="message" name="message" required
-                placeholder="What were you using Claude Sonnet for? How does losing it affect your work or studies?"></textarea>
-    </div>
-
-    <div class="checkbox-row">
-      <input type="checkbox" id="consent" name="consent" value="yes" required />
-      <label for="consent" style="font-weight:400;">
-        I agree that my name, GitHub username, institution, and complaint may be included in a
-        summary submitted to the GitHub Education team. Email is kept private.
-      </label>
-    </div>
-
-    <button type="submit" id="submit-btn">Submit complaint</button>
-    <div id="success">Complaint filed. Thank you &mdash; we will be in touch.</div>
-  </form>
+  <a class="cta-btn"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSc9bF6wqjOfc4xNkoEpByKSXgK81Wr2TvHUSh9xlYhLZv5mhQ/viewform"
+     target="_blank" rel="noopener">Submit complaint &rarr;</a>
 </div>
 
 <div class="comments-section">
@@ -525,40 +385,5 @@
   </a>.
 </footer>
 
-<script>
-  const form   = document.getElementById('signup');
-  const btn    = document.getElementById('submit-btn');
-  const banner = document.getElementById('success');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    btn.disabled = true;
-    btn.textContent = 'Submitting…';
-
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' },
-      });
-
-      if (res.ok) {
-        form.reset();
-        banner.style.display = 'block';
-        btn.style.display = 'none';
-      } else {
-        const data = await res.json().catch(() => ({}));
-        const msg  = data?.errors?.map(e => e.message).join(', ') || 'Submission failed. Please try again.';
-        alert(msg);
-        btn.disabled = false;
-        btn.textContent = 'Submit complaint';
-      }
-    } catch {
-      alert('Network error. Please check your connection and try again.');
-      btn.disabled = false;
-      btn.textContent = 'Submit complaint';
-    }
-  });
-</script>
 </body>
 </html>

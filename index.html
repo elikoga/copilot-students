@@ -242,6 +242,63 @@
       margin-top: 16px;
     }
 
+    /* ── testimonials ── */
+    .quotes-section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 56px;
+    }
+    .quotes-section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .quotes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 14px;
+    }
+    .quote-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--link);
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+    .quote-text {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .quote-author {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .quote-author a { color: var(--muted); }
+    .quote-author a:hover { color: var(--link); }
+
+    /* ── comments ── */
+    .comments-section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+    .comments-section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .comments-section p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
     /* ── footer ── */
     footer {
       border-top: 1px solid var(--border);
@@ -324,6 +381,43 @@
       github.com/orgs/community/discussions/189268
     </a>
   </p>
+</div>
+
+<div class="quotes-section">
+  <h2>What students are saying</h2>
+  <div class="quotes-grid">
+
+    <div class="quote-card">
+      <p class="quote-text">&ldquo;Why all this corporate nonsense text? Just say you want to cut costs and remove the expensive models.&rdquo;</p>
+      <span class="quote-author"><a href="https://github.com/orgs/community/discussions/189268" target="_blank" rel="noopener">@Myoujin</a> &middot; community discussion</span>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">&ldquo;Not even Sonnet? I get Opus, but we can&rsquo;t even get Sonnet?&rdquo;</p>
+      <span class="quote-author"><a href="https://github.com/orgs/community/discussions/189268" target="_blank" rel="noopener">@peterxn123</a> &middot; community discussion</span>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">&ldquo;I&rsquo;d rather have a discount and still have access to models rather than free but useless.&rdquo;</p>
+      <span class="quote-author"><a href="https://github.com/orgs/community/discussions/189268" target="_blank" rel="noopener">@Vricken</a> &middot; community discussion</span>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">&ldquo;Premium models consume more requests anyway &mdash; it is an idiotic decision. They aren&rsquo;t saving inference costs; they&rsquo;re just moving from some large-model requests to many small-model requests.&rdquo;</p>
+      <span class="quote-author"><a href="https://github.com/orgs/community/discussions/189268" target="_blank" rel="noopener">@Gpgabriel25</a> &middot; community discussion</span>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">&ldquo;I had just begun using Copilot directly from GitHub&rsquo;s UI this week. I thought it was great and even outperformed raw Claude Code on my terminal. Reducing model intelligence will make the harness irrelevant.&rdquo;</p>
+      <span class="quote-author"><a href="https://github.com/orgs/community/discussions/189268" target="_blank" rel="noopener">@diegohh0411</a> &middot; community discussion</span>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">&ldquo;Copilot just got useless, basically.&rdquo;</p>
+      <span class="quote-author"><a href="https://github.com/orgs/community/discussions/189268" target="_blank" rel="noopener">@FelipeFMA</a> &middot; community discussion</span>
+    </div>
+
+  </div>
 </div>
 
 <div class="form-wrap">
@@ -409,6 +503,18 @@
     <button type="submit" id="submit-btn">Submit complaint</button>
     <div id="success">Complaint filed. Thank you &mdash; we will be in touch.</div>
   </form>
+</div>
+
+<div class="comments-section">
+  <h2>Join the conversation</h2>
+  <p>Comments are powered by GitHub Issues &mdash; a GitHub account is required to post.</p>
+  <script src="https://utteranc.es/client.js"
+          repo="elikoga/copilot-students"
+          issue-term="title"
+          theme="github-dark"
+          crossorigin="anonymous"
+          async>
+  </script>
 </div>
 
 <footer>
